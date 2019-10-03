@@ -56,10 +56,18 @@ class Stack(object):
     def is_empty(self):
         '''
         to check whether stack is empty or not
-        :return: true if stack if empty false otherwise
+        :return: true if stack is empty false otherwise
         '''
 
         return self.current_size() == 0
+
+    def is_full(self):
+        '''
+        to check whether stack is full or not
+        :return: true if stack is full, false otherwise
+        '''
+
+        return self.current_size() == self.size
 
     def current_size(self):
         '''
@@ -79,11 +87,9 @@ class Stack(object):
         return inspect.getsource(Stack)
 
 
-'''
- TO DO :
-    add files for infix prefix postfix application files in application folder
-        
-   '''
+# TODO : add files for infix prefix postfix application files in application folder
+
+
 
 
 
